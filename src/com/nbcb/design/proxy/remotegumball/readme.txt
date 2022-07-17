@@ -1,0 +1,2 @@
+这个package把RMI和gumballmachine的例子结合起来
+实现了跨JVM调用
