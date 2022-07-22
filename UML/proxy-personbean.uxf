@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>450</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>PersonBeanImpl</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>450</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Proxy.newProxyInstance()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>310</x>
+      <y>150</y>
+      <w>160</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>PersonBean
+--
+setName()
+setGender()
+setInterests
+getHotOrNotRating()
+setHotOrNotRating()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>280</y>
+      <w>180</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>360</x>
+      <y>100</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>接口</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>360</x>
+      <y>510</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>通过Java提供的Proxy.newProxyInstance()
+功能创建动态代理类
+这个动态代理类也必须要实现PersonBean接口</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>180</x>
+      <y>510</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>实现类</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>90</x>
+      <y>40</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>通过PersonBean的例子,
+说明如何通过Java提供的
+Proxy功能创建动态代理</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>290</y>
+      <w>220</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>450</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>MatchMakingTestDrive</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>440</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+use</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>830</x>
+      <y>520</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>我们可以像操作PersonBean一样,操作
+新创建的动态代理类</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>280</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>OwnInvocationHandler</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>680</x>
+      <y>80</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>InvocationHandler
+--
+invoke()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>300</y>
+      <w>120</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+use</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>150</y>
+      <w>110</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>910</x>
+      <y>140</y>
+      <w>410</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>我们通过Java提供的Proxy.newProxyInstance()
+功能创建动态代理类的时候,可以定义一个InvocationHandler
+这个InvocationHandler接口是啥意思呢?
+我们只要看一下InvocationHandler接口的一个实现类:
+OwnInvocationHandler就行了.
+OwnInvocationHandler中,会对我们原始对象(PersonBeanImpl)
+中的的各个方法,进行一些业务逻辑处理.
+
+具体业务逻辑参考:
+OwnInvocationHandler.java
+NonOwnInvocationHandler.java
+
+这样就能够实现通过动态代理,
+对原有对象各个方法的业务逻辑进行调整.</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

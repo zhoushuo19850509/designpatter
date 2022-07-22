@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>360</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>MyRemoteImpl</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>250</x>
+      <y>130</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>MyRemote
+--
+sayHello()
+getMessage()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>210</y>
+      <w>170</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>360</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Skeleton(Proxy object)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>210</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>300</x>
+      <y>560</y>
+      <w>320</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>在服务端
+RMI通过Naming.rebind()方法,
+根据原对象(MyRemoteImpl)创建一个新对象,
+名字叫Skeleton,其实是创建了一个动态代理类
+
+后续客户端访问服务端的时候,就访问这个动态代理类.
+而不是直接访问原对象.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>40</y>
+      <w>30</w>
+      <h>680</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;660.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>540</x>
+      <y>50</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>服务端</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>740</x>
+      <y>50</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>客户端</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>360</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Stub(Proxy object)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>740</x>
+      <y>560</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>在客户端
+RMI通过Naming.lookup()方法,
+根据原对象接口(MyRemote)创建了一个新对象,
+名字叫Stub,其实是创建了一个动态代理类
+
+后续客户端访问服务端的时候,就先访问这个Stub,
+而不是直接访问原对象</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>790</x>
+      <y>130</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>MyRemote
+--
+sayHello()
+getMessage()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>220</y>
+      <w>110</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>350</y>
+      <w>230</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+访问</panel_attributes>
+    <additional_attributes>10.0;30.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>470</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>RMI Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>480</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>RMI Client</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>380</y>
+      <w>40</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>380</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>50</x>
+      <y>20</y>
+      <w>300</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>这个UML图说明了RMI的用法
+RMI机制从整体来说,实现了远程访问某个Java对象</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

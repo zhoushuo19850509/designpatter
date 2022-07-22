@@ -7,9 +7,6 @@ public class MatchMakingTestDrive {
         MatchMakingTestDrive test = new MatchMakingTestDrive();
         test.drive();
 
-
-
-
     }
 
     public void drive(){
@@ -41,8 +38,6 @@ public class MatchMakingTestDrive {
         }catch(Exception e){
             System.out.println("nonOwnProxy access illegal methods ...");
         }
-
-
     }
 
 
