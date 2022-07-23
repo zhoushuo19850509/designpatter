@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>400</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>GumballMachine</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>220</x>
+      <y>140</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>GumballMachineRemote
+--
+getLocation()
+getCount()
+getStatus()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>240</y>
+      <w>230</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+implements</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>650</x>
+      <y>50</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>客户端</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>640</x>
+      <y>140</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>GumballMachineRemote
+--
+getLocation()
+getCount()
+getStatus()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>240</x>
+      <y>40</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>服务端</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>400</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>client stub</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>690</x>
+      <y>230</y>
+      <w>120</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+implements</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>400</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>server proxy</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>240</y>
+      <w>160</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>380</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+远程访问</panel_attributes>
+    <additional_attributes>10.0;30.0;80.0;20.0;140.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>400</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>GumballMonitor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>400</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>60</x>
+      <y>470</y>
+      <w>570</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>server proxy怎么生成的呢?
+我们只要参考RMI的用法就知道了:
+Naming.rebind("rmi://localhost:1900/getGumballInfo",gumballMachineRemote);
+其中gumballMachineRemote是GumballMachine对象
+
+现在你明白了把,RMI根据要求,创建了一个GumballMachineRemote
+接口的实现类,客户端就通过这个实现类和服务端通信.
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>60</x>
+      <y>640</y>
+      <w>800</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>那么,客户端client stub是怎么生成的呢?
+我们参考如下代码:
+gumballMachineRemote = (GumballMachineRemote) Naming.lookup("rmi://localhost:1900/getGumballInfo");
+其中gumballMachineRemote虽然声明的是我们自定义的RMI接口
+但是,经过Naming.lookup()处理,已经一个实现了GumballMachineRemote接口的对象.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
