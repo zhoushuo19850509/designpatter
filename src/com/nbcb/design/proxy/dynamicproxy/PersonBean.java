@@ -1,5 +1,8 @@
 package com.nbcb.design.proxy.dynamicproxy;
 
+/**
+ *
+ */
 public interface PersonBean {
 
     String getName();
