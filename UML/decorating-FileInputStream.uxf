@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>50</y>
+      <w>160</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>/InputStream/
+--
+/read()/
+
+read(byte b[])
+read(byte b[], int off, int len)
+skip()
+available()
+close()
+mark()
+reset()
+markSupported()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>320</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FileInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>320</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FilterInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>320</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>StringBufferInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>320</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>ByteArrayInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>230</y>
+      <w>300</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>230</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>230</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>230</y>
+      <w>270</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>460</y>
+      <w>200</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>BufferedInputStream
+--
+InputStream inputStream
+--
+--基于父类增强的方法
+read()
+read(byte b[], int off, int len)
+skip()
+available()
+close()
+mark()
+reset()
+markSupported()
+
+--自己新增的方法
+fill()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>460</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>PushbackInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>460</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>DataInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>460</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>LineNumberInputStream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>340</y>
+      <w>340</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;320.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>340</y>
+      <w>160</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>340</y>
+      <w>120</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>340</y>
+      <w>290</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>690</x>
+      <y>240</y>
+      <w>290</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>FilterInputStream是抽象修饰类.
+里面没啥业务逻辑,规定了各个装饰类可以实现的方法.
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>20</x>
+      <y>380</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>FileInputStream/
+StringBufferInputStream/
+ByteArrayInputStream
+是InputStream的子类,
+是我们计划要增强的类
+style=wordwrap
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>790</x>
+      <y>560</y>
+      <w>290</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>BufferedInputStream这几个就是装饰类,
+通过实现FilterInputStream中的那些方法,
+比如read()实现增强.
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1150</x>
+      <y>460</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>LowerCaseInputStreamTest
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>340</y>
+      <w>490</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;470.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1100</x>
+      <y>360</y>
+      <w>390</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>尝试用我们自己写的装饰类.增强InputStream
+实现的功能是:把所有InputStream读取的字节流转成小写
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

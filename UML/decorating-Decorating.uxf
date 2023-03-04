@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>200</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Component
+--
+methodA()
+methodB()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>270</y>
+      <w>200</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+extends</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>420</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Decorator
+--
+methodA()
+methodB()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>580</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ConcreteDecoratorA
+--
+Component wrapperObj
+--
+methodA()
+methodB()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>580</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ConcreteDecoratorB
+--
+Component wrapperObj
+--
+methodA()
+methodB()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>270</y>
+      <w>110</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>470</y>
+      <w>130</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>470</y>
+      <w>100</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>410</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ConcreteComponent
+--
+methodA()
+methodB()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>220</x>
+      <y>120</y>
+      <w>260</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>这个UML图为了说明装饰(Decorating)设计模式的整体架构
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>810</x>
+      <y>180</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>基类,我们称为component
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>260</x>
+      <y>320</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>具体的实现类,继承自component
+这就是我们要通过装饰设计模式增强的对象
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>890</x>
+      <y>380</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>抽象装饰类,可以在抽象装饰类中规定
+实体装饰类需要实现哪些方法
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
