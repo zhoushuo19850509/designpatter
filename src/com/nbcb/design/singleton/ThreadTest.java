@@ -11,6 +11,5 @@ public class ThreadTest {
             StartChoclateBoiler startChoclate = new StartChoclateBoiler();
             startChoclate.start();;
         }
-
     }
 }

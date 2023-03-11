@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>230</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/PizzaStore/
+--
+/Pizza cretePizza(String type)/
++Pizza orderPizza(String type)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>400</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>NKPizzaStore
+--
+PizzaIngredientFactory factory
+--
+Pizza cretePizza(String type)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>400</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ChicagoPizzaStore
+--
+PizzaIngredientFactory factory
+--
+Pizza cretePizza(String type)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>290</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>290</y>
+      <w>170</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>340</x>
+      <y>0</y>
+      <w>350</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>这个UML展示了我们通过factory method的方式,
+对原来的simplefactory进行了优化,大致要点如下:
+
+PizzaStore抽象类,定义了抽象方法createPizza()
+把创建Pizza对象的逻辑下沉到PizzaStore的子类
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>620</y>
+      <w>170</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>/Pizza/
+--
+String name
+Dough dough
+Sauce sauce
+List&lt;Veggie&gt; veggies
+Cheese cheese
+Pepperoni pepperoni
+Clam
+--
+/prepare()/
+bake()
+cut()
+box()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>910</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CheesePizza
+--
+PizzaIngredientFactory ingredientFactory
+--
+prepare()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>910</y>
+      <w>300</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>VeggiePizza
+--
+PizzaIngredientFactory ingredientFactory
+--
+prepare()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>1060</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PepperoniPizza
+--
+PizzaIngredientFactory ingredientFactory
+--
+prepare()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>820</y>
+      <w>150</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>820</y>
+      <w>310</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;290.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>820</y>
+      <w>190</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>1060</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ClamPizza
+--
+PizzaIngredientFactory ingredientFactory
+--
+prepare()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>820</y>
+      <w>230</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>20</x>
+      <y>640</y>
+      <w>420</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>要点1 原来PizzaStore直接依赖Pizza
+在PizzaStore中直接创建了Pizza实际对象
+现在我们把Pizza改为抽象的对象(abstract class)
+Pizza对象中的各个组成部分:Dough/Sauce/Clam/Cheese等,
+由抽象工程(PizzaIngredientFactory)生成
+具体的抽象工程如何生成Pizza各个组成部分,
+参考&lt;factory-pizzaAbstractFactory-抽象工厂类详解.uxf&gt;
+
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>20</x>
+      <y>220</y>
+      <w>350</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>PizzStore和factory method中差不多,
+把创建pizza对象的方法createPizza()下沉到了子类.
+但是和factory method不同的是,
+createPizza()创建的Pizza对象,并不是最终的pizza对象.
+createPizza()创建的Pizza对象中的属性,是由抽象工程对象生成的
+
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>460</y>
+      <w>140</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>460</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;160.0;160.0;10.0</additional_attributes>
+  </element>
+</diagram>
