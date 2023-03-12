@@ -1,0 +1,1 @@
+通过macro package，说明如何实现批量执行command的功能
