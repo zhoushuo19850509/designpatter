@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>390</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>TurkeyAdapter
+--
+quack()
+fly()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>190</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+/Duck/
+--
+/quack()/
+/fly()/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>190</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+/Turkey/
+--
+/gobble()/
+/fly()/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>360</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>MallarDuck
+--
+quack()
+fly()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>360</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>WildTurkey
+--
+gobble()
+fly()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>260</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>260</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>390</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>260</y>
+      <w>170</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>570</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>DuckTestDriver</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>440</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>120</x>
+      <y>70</y>
+      <w>530</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>这个UML为了说明Adapter是啥意思.
+啥意思呢?就是我希望操作Duck对象,
+但是目前我手头上只有一个Turkey对象.
+怎么办呢?我创建一个adapter对象(TurkeyAdapter)
+这个adapter对象实现了Duck接口,但是实际的动作有Turkey对象来完成
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

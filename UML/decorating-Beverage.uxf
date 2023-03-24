@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>90</y>
+      <x>460</x>
+      <y>210</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -20,8 +20,8 @@ getDescription()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>310</y>
+      <x>0</x>
+      <y>430</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -36,8 +36,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>260</x>
-      <y>160</y>
+      <x>80</x>
+      <y>280</y>
       <w>470</w>
       <h>170</h>
     </coordinates>
@@ -48,8 +48,8 @@ extends</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>370</x>
-      <y>310</y>
+      <x>190</x>
+      <y>430</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -64,8 +64,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>160</y>
+      <x>260</x>
+      <y>280</y>
       <w>320</w>
       <h>170</h>
     </coordinates>
@@ -75,8 +75,8 @@ cost()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>310</y>
+      <x>590</x>
+      <y>430</y>
       <w>160</w>
       <h>50</h>
     </coordinates>
@@ -88,8 +88,8 @@ cost()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>620</x>
-      <y>490</y>
+      <x>440</x>
+      <y>610</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -104,8 +104,8 @@ cost()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>490</y>
+      <x>650</x>
+      <y>610</y>
       <w>150</w>
       <h>80</h>
     </coordinates>
@@ -120,8 +120,8 @@ cost()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1030</x>
-      <y>490</y>
+      <x>850</x>
+      <y>610</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -136,8 +136,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
-      <y>160</y>
+      <x>570</x>
+      <y>280</y>
       <w>110</w>
       <h>170</h>
     </coordinates>
@@ -147,8 +147,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>850</x>
-      <y>350</y>
+      <x>670</x>
+      <y>470</y>
       <w>280</w>
       <h>160</h>
     </coordinates>
@@ -158,8 +158,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>350</y>
+      <x>660</x>
+      <y>470</y>
       <w>70</w>
       <h>160</h>
     </coordinates>
@@ -169,8 +169,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>690</x>
-      <y>350</y>
+      <x>510</x>
+      <y>470</y>
       <w>150</w>
       <h>160</h>
     </coordinates>
@@ -180,8 +180,8 @@ cost()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
-      <y>310</y>
+      <x>380</x>
+      <y>430</y>
       <w>160</w>
       <h>80</h>
     </coordinates>
@@ -196,8 +196,8 @@ cost()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>160</y>
+      <x>460</x>
+      <y>280</y>
       <w>130</w>
       <h>170</h>
     </coordinates>

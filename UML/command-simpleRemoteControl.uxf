@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>90</x>
-      <y>340</y>
+      <x>70</x>
+      <y>350</y>
       <w>150</w>
       <h>30</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>220</y>
+      <x>660</x>
+      <y>230</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -31,8 +31,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>410</y>
+      <x>370</x>
+      <y>420</y>
       <w>110</w>
       <h>50</h>
     </coordinates>
@@ -44,8 +44,8 @@ on()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>390</y>
+      <x>660</x>
+      <y>400</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -59,8 +59,8 @@ undo()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>740</x>
-      <y>290</y>
+      <x>720</x>
+      <y>300</y>
       <w>30</w>
       <h>120</h>
     </coordinates>
@@ -70,8 +70,8 @@ undo()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>430</y>
+      <x>470</x>
+      <y>440</y>
       <w>210</w>
       <h>30</h>
     </coordinates>
@@ -81,8 +81,8 @@ undo()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>230</y>
+      <x>290</x>
+      <y>240</y>
       <w>260</w>
       <h>60</h>
     </coordinates>
@@ -95,8 +95,8 @@ buttonWasPressed()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>250</y>
+      <x>540</x>
+      <y>260</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
@@ -106,8 +106,8 @@ buttonWasPressed()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
-      <y>350</y>
+      <x>210</x>
+      <y>360</y>
       <w>180</w>
       <h>100</h>
     </coordinates>
@@ -117,8 +117,8 @@ buttonWasPressed()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>150</x>
-      <y>360</y>
+      <x>130</x>
+      <y>370</y>
       <w>620</w>
       <h>220</h>
     </coordinates>
@@ -128,8 +128,8 @@ buttonWasPressed()</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>50</x>
-      <y>150</y>
+      <x>30</x>
+      <y>160</y>
       <w>320</w>
       <h>30</h>
     </coordinates>
