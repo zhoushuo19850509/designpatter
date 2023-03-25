@@ -348,9 +348,9 @@ style=wordwrap</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>160</x>
-      <y>110</y>
-      <w>410</w>
-      <h>70</h>
+      <y>70</y>
+      <w>480</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>这个UML是为了说明Facade设计模式的一个实例场景
 虽然整个UML看起来很复杂,但是核心思路非常简单

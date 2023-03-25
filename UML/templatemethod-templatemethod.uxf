@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>0</x>
+      <y>140</y>
+      <w>430</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>这个UML是为了说明TemplateMethod设计模式
+所谓的template method,就是在某个抽象类中,
+定义一个template method,这个方法会调用若干抽象方法
+(primitiveOperation1()/primitiveOperation2())
+这些抽象方法有具体的子类去实现.
+
+这么做的好处是,template method可以专注于某个算法的实现
+而不用关心具体的子类是是啥.
+
+最典型的场景就是Arrays.sort(),排序的时候,
+无需关心array中元素的真正类型是啥
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>380</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>/AbstractClass/
+--
+templatemethod()
+/primitiveOperation1()/
+/primitiveOperation2()/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>580</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ConcreteClass1
+--
+primitiveOperation1()
+primitiveOperation2()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>450</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>570</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ConcreteClass2
+--
+primitiveOperation1()
+primitiveOperation2()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>450</y>
+      <w>140</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>390</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>primitiveOperation1()
+primitiveOperation2()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>400</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+</diagram>
