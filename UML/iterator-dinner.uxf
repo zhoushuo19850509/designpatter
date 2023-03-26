@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>330</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Waitress
+--
+printMenu()
+printMenu(Iterator menuIterator)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>190</x>
+      <y>80</y>
+      <w>440</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>这个UML为了说明Iterator设计模式的一个应用场景:Menu.
+Iterator设计模式的核心,就是通过实现Itrator接口创建一个迭代器.
+好处就是客户端(Waitress)访问MenuItem队列的时候
+无需关心MenuItem队列的真正类型</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>310</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Iterator
+--
+hasNext()
+next()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>510</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>DinnerMenuIterator
+--
+hasNext()
+next()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>510</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>PancakeHouseIterator
+--
+hasNext()
+next()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>730</x>
+      <y>530</y>
+      <w>70</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>煎饼屋
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>380</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+impplements</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>380</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>450</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>PancakeHouseMenu
+--
+menuImtes
+--
+Iterator createIterator()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>450</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>DinnerMenu
+--
+menuImtes
+--
+Iterator createIterator()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>340</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>350</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>520</y>
+      <w>700</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>680.0;50.0;680.0;120.0;10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>510</y>
+      <w>750</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>730.0;60.0;730.0;160.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>140</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>MenuItem
+--
+name
+description
+price
+vegeteration
+--
+getName()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>920</x>
+      <y>90</y>
+      <w>270</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>MenuItem是迭代器中的元素类型
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>310</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+/Menu/
+--
+/createIterator()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>360</y>
+      <w>130</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>360</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>760</x>
+      <y>730</y>
+      <w>420</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>PancakeHouseIterator/DinnerIterator实现了Iterator接口,
+分别创建了两个迭代器对象
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>190</x>
+      <y>740</y>
+      <w>420</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>PancakeHouseMenu/DinnerMenu实现了Menu接口,
+负责两个事情:
+1.创建Menu对象列表: menuList
+2.分别创建PancakeHouseIterator/DinnerMenuIterator
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>560</x>
+      <y>260</y>
+      <w>320</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Waitress负责遍历两个迭代器,打印MenuItems
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

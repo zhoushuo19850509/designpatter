@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>500</x>
-      <y>390</y>
+      <x>460</x>
+      <y>380</y>
       <w>120</w>
       <h>60</h>
     </coordinates>
@@ -18,8 +18,8 @@ fly()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
-      <y>190</y>
+      <x>200</x>
+      <y>180</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -34,8 +34,8 @@ fly()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>190</y>
+      <x>670</x>
+      <y>180</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -50,8 +50,8 @@ fly()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
-      <y>360</y>
+      <x>200</x>
+      <y>350</y>
       <w>140</w>
       <h>70</h>
     </coordinates>
@@ -65,8 +65,8 @@ fly()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>360</y>
+      <x>670</x>
+      <y>350</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -80,8 +80,8 @@ fly()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>260</y>
+      <x>260</x>
+      <y>250</y>
       <w>30</w>
       <h>120</h>
     </coordinates>
@@ -91,8 +91,8 @@ fly()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>260</y>
+      <x>730</x>
+      <y>250</y>
       <w>30</w>
       <h>120</h>
     </coordinates>
@@ -102,8 +102,8 @@ fly()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>610</x>
-      <y>390</y>
+      <x>570</x>
+      <y>380</y>
       <w>120</w>
       <h>30</h>
     </coordinates>
@@ -113,8 +113,8 @@ fly()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>260</y>
+      <x>310</x>
+      <y>250</y>
       <w>170</w>
       <h>160</h>
     </coordinates>
@@ -124,8 +124,8 @@ fly()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>500</x>
-      <y>570</y>
+      <x>460</x>
+      <y>560</y>
       <w>120</w>
       <h>30</h>
     </coordinates>
@@ -135,8 +135,8 @@ fly()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>440</y>
+      <x>500</x>
+      <y>430</y>
       <w>30</w>
       <h>150</h>
     </coordinates>
@@ -146,8 +146,8 @@ fly()
   <element>
     <id>Text</id>
     <coordinates>
-      <x>120</x>
-      <y>70</y>
+      <x>80</x>
+      <y>60</y>
       <w>530</w>
       <h>90</h>
     </coordinates>
